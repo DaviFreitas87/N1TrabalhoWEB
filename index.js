@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.post('/elements.html', function(req, res){
     var conteudo = JSON.stringify(req.body);
-    console.log(conteudo);
+    console.log("Pedido Recebido:\n" + conteudo);
 });
 
 app.listen(8000);
